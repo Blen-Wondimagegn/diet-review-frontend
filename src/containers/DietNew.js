@@ -15,6 +15,18 @@ export class DietNew extends Component {
             duration: ''
         }
     }
+  
+    handleChange = event => {
+        this.setState({
+            [event.target.name]: event.target.value
+        })
+    }
+
+    handleSubmit = event => {
+        event.preventDefault();
+        this.props.addDiet(this.state)
+        this.props.history.push('/diets');
+    }
 
     
 
