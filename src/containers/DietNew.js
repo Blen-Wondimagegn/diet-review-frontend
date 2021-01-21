@@ -1,4 +1,8 @@
 import React, { Component } from 'react'
+import React, { Component } from 'react'
+import { addDiet } from '../actions/index'
+import { connect } from 'react-redux'
+
 export class DietNew extends Component {
 
     constructor(props) {
@@ -74,4 +78,4 @@ export class DietNew extends Component {
         )
     }
 }
-export default DietNew;
+export default connect(null, { addDiet })(DietNew)
