@@ -16,10 +16,17 @@ class App extends Component {
 
   render() {
     return (
-    <div>
-      
-    </div>
-    );
+      <Router>
+        <NavBar />
+        <div className="container">
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/diets/new" component={DietNew} />
+            <Route exact path="/diets" component={DietList} />
+            <Route exact path="/diets/:id/edit" component={DietEdit} />
+          </Switch>
+        </div>
+      </Router>    );
   }
 }
 
