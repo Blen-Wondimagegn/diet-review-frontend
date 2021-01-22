@@ -1,4 +1,4 @@
-# YG HEALTHY MEALS
+# HEALTHY MEALS
 
 ## React-redux and Rails Project Frontend
 
