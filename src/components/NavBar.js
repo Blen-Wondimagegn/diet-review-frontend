@@ -1,20 +1,29 @@
-import React, { Component } from 'react'
-import { NavLink } from 'react-router-dom';
+import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
 
-export class NavBar extends Component {
-    render() {
-        return (
-            <nav>
-                <div className="container dark ">
-                    <NavLink to="/" className="brand-logo "><h4> Home</h4> </NavLink>
-                    <ul className="right">
-                        <li><NavLink to="/diets/new">Add Your Diet Plan</NavLink></li>
-                        <li><NavLink to="/diets">Check Out Diet Plans</NavLink></li>
-                    </ul>
-                </div>
-            </nav>
-        )
-    }
+function NavBar() {
+  return (
+    <nav>
+      <div className="container dark ">
+        <NavLink to="/" className="brand-logo ">
+          <h4> HEALTHY MEALS</h4>{" "}
+        </NavLink>
+        <ul className="right">
+          <li>
+            <NavLink to="/diets/new">
+              <h6> Add Your Diet Plan</h6>{" "}
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/diets">
+              {" "}
+              <h6> Check Out Diet Plans</h6>
+            </NavLink>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  );
 }
 
-export default NavBar
+export default NavBar;
