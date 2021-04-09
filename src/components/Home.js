@@ -3,15 +3,15 @@ import { NavLink } from "react-router-dom";
 
 function Home() {
   return (
-    <div class="row ">
-      <div class="col s12 m7">
-        <div class="card large deep-purple lighten-5 ">
-          <div class="card-image">
-            <div class="card-panel deep-purple lighten-5 ">
-              <h4 className="center h4">HEALTHY MEALS</h4>
+    <div className="row ">
+      <div className="col s12 m7">
+        <div className="card large deep-purple lighten-5 ">
+          <div className="card-image">
+            <div className="card-panel deep-purple lighten-5 ">
+              <h1 className="center h4">Dieting...</h1>
             </div>
           </div>
-          <div class="card-content ">
+          <div className="card-content ">
             <p>
               Welcome to HEALTHY MEALS! Diet is established among the most
               important influences on health in modern societies. Injudicious
@@ -23,7 +23,7 @@ function Home() {
               to one another.
             </p>
           </div>
-          <div class="card-action">
+          <div className="card-action">
             <NavLink to="/diets">
               Not Sure Where to start? Check Out these Diet Plans
             </NavLink>

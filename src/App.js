@@ -7,10 +7,6 @@ import DietNew from "./containers/DietNew.js";
 import NavBar from "./components/NavBar";
 
 class App extends Component {
-  constructor() {
-    super();
-  }
-
   render() {
     return (
       <Router>

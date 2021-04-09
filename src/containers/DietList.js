@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import DietItem from "../components/DietItem";
 import { connect } from "react-redux";
 import { fetchDiets } from "../actions/index";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 class DietList extends Component {
   componentDidMount() {
@@ -15,15 +15,7 @@ class DietList extends Component {
     ));
     return (
       <div>
-        <h2 className="center ">Deit Reviews </h2>
-        <button>
-          <NavLink to="/">Home</NavLink>
-        </button>
-        <br></br>
-        <button>
-          <NavLink to="/diets/new">Add Your Diet Plan</NavLink>
-        </button>
-
+        <h2 className="center ">Diet Reviews </h2>
         <ul>{diets}</ul>
       </div>
     );

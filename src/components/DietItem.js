@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { deleteDiet } from "../actions/deleteDiet";
+// import Likes from "../components/Likes";
 
 const DietItem = ({ diet, deleteDiet }) => {
   return (
@@ -15,7 +16,7 @@ const DietItem = ({ diet, deleteDiet }) => {
           My start weight was {diet.start_weight} lbs. <br />I lost{" "}
           {diet.lost_weight} lbs with in {diet.duration}.<br />
         </p>
-        <button onClick={() => deleteDiet(diet.id)}>DELET</button>{" "}
+        <button onClick={() => deleteDiet(diet.id)}>DELETE</button>
       </div>
     </div>
   );

@@ -38,5 +38,18 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "## React-redux and Rails Project Frontend",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/billymeku/diet-review-frontend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/billymeku/diet-review-frontend/issues"
+  },
+  "homepage": "https://github.com/billymeku/diet-review-frontend#readme"
 }
